@@ -447,3 +447,33 @@ const ARTICLES = [
     ]
   }
 ];
+
+/* ============================================================
+   Encart publicitaire
+   ------------------------------------------------------------
+   Chaque objet = un annonceur qui défile dans le bandeau pub
+   de la page d'accueil. Pour ajouter un annonceur, copiez un
+   bloc { ... } et remplissez les champs.
+   Champs : name (nom), text (accroche), cta (bouton),
+   link (lien, "#" = pas de lien).
+   ============================================================ */
+const ADS = [
+  {
+    name: "Votre entreprise ici",
+    text: "Faites défiler votre activité devant des milliers de lecteurs.",
+    cta: "Devenir annonceur",
+    link: "#"
+  },
+  {
+    name: "Espace pub disponible",
+    text: "Contactez notre régie publicitaire pour vos campagnes.",
+    cta: "Nous contacter",
+    link: "#"
+  },
+  {
+    name: "Votre promo ici",
+    text: "Offres, événements, lancements : touchez le Togo et la diaspora.",
+    cta: "Réserver cet espace",
+    link: "#"
+  }
+];

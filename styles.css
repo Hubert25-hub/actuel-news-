@@ -33,6 +33,7 @@ body {
   color: var(--ink);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img { max-width: 100%; display: block; }
@@ -518,6 +519,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 @media (max-width: 640px) {
+  .topbar #live-date { display: none; }
+  .topbar .container { justify-content: center; }
   .cards { grid-template-columns: 1fr; }
   .hero-side { grid-template-columns: 1fr; }
   .hero-main { min-height: 320px; }

@@ -534,6 +534,7 @@ ARTICLES.push(
 const ADS = [
   {
     name: "Hubcreate",
+    image: "hubcreate.png",
     text: "Des sites web qui impressionnent. Conçus avec soin.",
     cta: "Visiter hubcreate.dev",
     link: "https://hubcreate.dev",
@@ -541,6 +542,7 @@ const ADS = [
   },
   {
     name: "ayePREP",
+    image: "ayeprep.png",
     text: "TCF et TEF Canada : préparez-vous en conditions réelles, correction IA, Mobile Money accepté.",
     cta: "Préparer mon examen",
     link: "https://ayeprep.com",
@@ -548,6 +550,7 @@ const ADS = [
   },
   {
     name: "AYEGROUPE",
+    image: "ayegroupe.png",
     text: "Logiciel, création, négoce, logistique et équipement IT. 38 domaines d'intervention.",
     cta: "Découvrir le groupe",
     link: "https://ayegroupe.com/fr/"

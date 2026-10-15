@@ -191,13 +191,24 @@ a { color: inherit; text-decoration: none; }
   50% { opacity: 0.4; transform: scale(0.75); }
 }
 .ticker .items {
-  white-space: nowrap;
+  flex: 1;
   overflow: hidden;
   font-size: 14px;
   padding: 10px 0;
 }
-.ticker .items span { margin-right: 48px; }
-.ticker .items span::before { content: "/// "; color: var(--crimson); font-family: var(--font-mono); }
+.ticker-track {
+  display: inline-flex;
+  width: max-content;
+  white-space: nowrap;
+  animation: ticker-scroll 30s linear infinite;
+}
+.ticker:hover .ticker-track { animation-play-state: paused; }
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.ticker-track span { margin-right: 48px; }
+.ticker-track span::before { content: "/// "; color: var(--crimson); font-family: var(--font-mono); }
 
 /* ---------- Bandeau publicitaire ---------- */
 .ads-band {
@@ -554,6 +565,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .ticker .label::before { animation: none; }
+  .ticker-track { animation: none; }
   .ads-track { animation: none; }
   .card { transition: none; }
 }

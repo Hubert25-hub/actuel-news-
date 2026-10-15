@@ -117,12 +117,16 @@
     var track = document.getElementById("ads-track");
     if (!track || typeof ADS === "undefined" || !ADS.length) return;
     var html = ADS.map(function (ad) {
-      return '<div class="ad-card">' +
+      var inner =
+        (ad.image ? '<img class="ad-img" src="' + esc(ad.image) + '" alt="' + esc(ad.name) + '" loading="lazy">' : "") +
         '<div class="ad-name">' + esc(ad.name) + '</div>' +
         '<div class="ad-text">' + esc(ad.text) + '</div>' +
-        '<a class="ad-cta" href="' + esc(ad.link || "#") + '">' +
-          esc(ad.cta || "En savoir plus") + ' &rarr;</a>' +
-      '</div>';
+        '<span class="ad-cta">' + esc(ad.cta || "En savoir plus") + " &rarr;</span>";
+      var card = '<div class="ad-card' + (ad.theme === "dark" ? " dark" : "") + '">' + inner + "</div>";
+      if (ad.link && ad.link !== "#") {
+        return '<a class="ad-link" href="' + esc(ad.link) + '" target="_blank" rel="sponsored noopener">' + card + "</a>";
+      }
+      return card;
     }).join("");
     track.innerHTML = html + html; /* doublé pour la boucle infinie */
   })();

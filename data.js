@@ -531,9 +531,9 @@ const ADS = [
   },
   {
     name: "AYEGROUPE",
-    text: "Le groupe derrière ayePREP et ses marques.",
+    text: "Ingénierie logicielle, négoce et logistique internationale. Lomé et Surrey.",
     cta: "Découvrir le groupe",
-    link: "https://ayegroup.com"
+    link: "https://ayegroupe.com/fr/"
   },
   {
     name: "Espace pub disponible",

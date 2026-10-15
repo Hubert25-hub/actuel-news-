@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ACTUEL — L'actualité du Togo, de l'Afrique et du monde</title>
   <meta name="description" content="ACTUEL, votre source d'information sur le Togo, l'Afrique et le monde. Politique, économie, société, culture, sport, technologie.">
+  <link rel="icon" href="favicon.svg?v=1" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ACTUEL">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="ACTUEL — L'actualité du Togo, de l'Afrique et du monde">
+  <meta property="og:description" content="ACTUEL, votre source d'information sur le Togo, l'Afrique et le monde. Politique, économie, société, culture, sport, technologie.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ACTUEL — L'actualité du Togo, de l'Afrique et du monde">
+  <meta name="twitter:description" content="ACTUEL, votre source d'information sur le Togo, l'Afrique et le monde. Politique, économie, société, culture, sport, technologie.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261014e">
+  <link rel="stylesheet" href="styles.css?v=20261014f">
 </head>
 <body>
 
@@ -115,6 +124,33 @@
       <div class="ads-track" id="ads-track"></div>
     </section>
 
+    <!-- Nos piliers éditoriaux -->
+    <section class="pillars">
+      <div class="container">
+        <div class="section-head">
+          <h2>Nos piliers</h2>
+        </div>
+        <p class="pillars-intro">Un média indépendant, apolitique et ancré dans le présent, au service de l'intérêt général.</p>
+        <div class="pillars-grid">
+          <a class="pillar-card" href="category.html?cat=societe">
+            <span class="pillar-num">01</span>
+            <h3>Social</h3>
+            <p>Inégalités, éducation, santé, communautés, droits, solidarités.</p>
+          </a>
+          <a class="pillar-card" href="category.html?cat=economie">
+            <span class="pillar-num">02</span>
+            <h3>Économique</h3>
+            <p>Entrepreneuriat, marchés, travail, innovations, économie locale.</p>
+          </a>
+          <a class="pillar-card" href="category.html?cat=culture">
+            <span class="pillar-num">03</span>
+            <h3>Artistique</h3>
+            <p>Création, culture, expressions émergentes, patrimoine vivant.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Sections catégories (remplies en JS) -->
     <div id="category-sections"></div>
 
@@ -122,7 +158,7 @@
     <section class="newsletter" id="newsletter">
       <div class="container">
         <h2>Restez informé</h2>
-        <p>Recevez l'essentiel de l'actualité du Togo chaque matin dans votre boîte mail.</p>
+        <p>L'essentiel de la semaine, chaque vendredi dans votre boîte mail.</p>
         <form id="newsletter-form">
           <input type="email" placeholder="Votre adresse e-mail" required aria-label="Adresse e-mail">
           <button type="submit">S'abonner</button>
@@ -163,6 +199,7 @@
             <li><a href="#">Qui sommes-nous</a></li>
             <li><a href="#">Notre équipe</a></li>
             <li><a href="charte.html">Charte éditoriale</a></li>
+            <li><a href="search.html">Rechercher</a></li>
           </ul>
         </div>
         <div>

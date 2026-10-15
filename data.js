@@ -22,6 +22,7 @@
    ============================================================ */
 
 const CATEGORIES = {
+  droit:         "Droit et démarches",
   politique:     "Politique",
   economie:      "Économie",
   societe:       "Société",
@@ -448,6 +449,61 @@ const ARTICLES = [
   }
 ];
 
+/* ---- Articles "Droit et démarches" (rubrique ajoutée le 14/10/2026) ---- */
+ARTICLES.push(
+  {
+    id: 24,
+    title: "Passeport togolais : les démarches expliquées simplement",
+    category: "droit",
+    excerpt: "Pièces à fournir, étapes et délais : tout ce qu'il faut savoir avant de demander ou renouveler son passeport.",
+    image: "",
+    author: "La Rédaction",
+    date: "13 octobre 2026",
+    readTime: "4 min de lecture",
+    tags: ["Droit", "Démarches", "Passeport"],
+    body: [
+      "Faire une demande de passeport peut sembler compliqué quand on ne connaît pas la procédure. Voici les grandes étapes à connaître pour préparer son dossier sereinement.",
+      "La première étape consiste à rassembler les pièces généralement demandées : une pièce d'identité, des photos d'identité récentes et les formulaires requis. Les listes exactes pouvant évoluer, il est prudent de vérifier auprès des services compétents avant de se déplacer.",
+      "Une fois le dossier déposé, un délai de traitement s'applique. Prévoyez une marge suffisante si vous avez un voyage programmé, et conservez précieusement votre récépissé de dépôt.",
+      "En cas de perte ou de vol, des démarches spécifiques existent : signalez la situation aux autorités et constituez un nouveau dossier. Notre rédaction mettra régulièrement à jour ce guide pratique."
+    ]
+  },
+  {
+    id: 25,
+    title: "Carte nationale d'identité : obtention et renouvellement",
+    category: "droit",
+    excerpt: "Première demande ou renouvellement : les étapes pour obtenir sa carte nationale d'identité sans stress.",
+    image: "",
+    author: "La Rédaction",
+    date: "12 octobre 2026",
+    readTime: "3 min de lecture",
+    tags: ["Droit", "Démarches", "Identité"],
+    body: [
+      "La carte nationale d'identité est le document de base de la vie administrative. Voici comment s'y prendre pour une première demande comme pour un renouvellement.",
+      "Préparez les documents justificatifs habituels : acte de naissance ou pièce équivalente, justificatif de domicile et photos d'identité. Renseignez-vous sur la liste à jour avant votre visite.",
+      "Le dépôt se fait auprès des services habilités de votre localité. Après vérification du dossier, la carte est établie dans un délai variable selon les périodes.",
+      "Pensez à anticiper : une carte expirée peut bloquer de nombreuses démarches, des inscriptions scolaires aux opérations bancaires."
+    ]
+  },
+  {
+    id: 26,
+    title: "Créer son entreprise au Togo : les étapes à connaître",
+    category: "droit",
+    excerpt: "Du choix du statut aux formalités d'immatriculation : le parcours type pour lancer son activité en règle.",
+    image: "",
+    author: "La Rédaction",
+    date: "11 octobre 2026",
+    readTime: "5 min de lecture",
+    tags: ["Droit", "Entrepreneuriat", "Démarches"],
+    body: [
+      "Lancer son entreprise est un projet enthousiasmant, à condition de partir sur de bonnes bases juridiques. Voici les étapes généralement suivies par les créateurs d'entreprise.",
+      "Tout commence par le choix du statut juridique, adapté à la taille du projet et au nombre d'associés. Cette décision influence la fiscalité et la responsabilité du dirigeant.",
+      "Viennent ensuite les formalités d'immatriculation auprès des organismes compétents, puis l'obtention des documents officiels d'existence légale de l'entreprise.",
+      "Enfin, pensez aux obligations qui suivent la création : comptabilité, déclarations et éventuelles autorisations sectorielles. Se faire accompagner par un professionnel du droit reste le meilleur investissement de départ."
+    ]
+  }
+);
+
 /* ============================================================
    Encart publicitaire
    ------------------------------------------------------------
@@ -465,6 +521,19 @@ const ADS = [
     cta: "Visiter hubcreate.dev",
     link: "https://hubcreate.dev",
     theme: "dark"
+  },
+  {
+    name: "ayePREP",
+    text: "TCF et TEF Canada : préparez-vous en conditions réelles, correction IA, Mobile Money accepté.",
+    cta: "Préparer mon examen",
+    link: "https://ayeprep.com",
+    theme: "dark"
+  },
+  {
+    name: "AYEGROUPE",
+    text: "Le groupe derrière ayePREP et ses marques.",
+    cta: "Découvrir le groupe",
+    link: "https://ayegroup.com"
   },
   {
     name: "Espace pub disponible",

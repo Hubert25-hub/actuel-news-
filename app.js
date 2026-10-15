@@ -68,7 +68,8 @@
     if (!el) return;
     var now = new Date();
     el.textContent = new Intl.DateTimeFormat("fr-FR", {
-      weekday: "long", day: "numeric", month: "long", year: "numeric"
+      weekday: "long", day: "numeric", month: "long", year: "numeric",
+      timeZone: "Africa/Lome"
     }).format(now);
   })();
 

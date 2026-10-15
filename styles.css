@@ -91,15 +91,25 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
   gap: 24px;
 }
-.logo {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 32px;
-  letter-spacing: 2px;
-  color: var(--crimson);
-  line-height: 1;
+.logo { display: inline-flex; align-items: center; gap: 12px; line-height: 1; }
+.logo-badge {
+  width: 132px;
+  height: 51px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  position: relative;
+  flex-shrink: 0;
 }
-.logo span { color: var(--white); font-weight: 400; font-size: 13px; letter-spacing: 4px; display: block; }
+.logo-badge img {
+  position: absolute;
+  width: 371px;
+  height: 371px;
+  max-width: none;
+  left: -120px;
+  top: -159px;
+}
+.logo-tagline { color: var(--white); font-weight: 400; font-size: 13px; letter-spacing: 4px; }
 
 .main-nav ul {
   display: flex;
@@ -671,6 +681,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 @media (max-width: 640px) {
   .cards { grid-template-columns: 1fr; }
   .pillars-grid { grid-template-columns: 1fr; }
+  .logo-tagline { display: none; }
   .hero-side { grid-template-columns: 1fr; }
   .hero-main { min-height: 320px; }
   .hero-main h1 { font-size: 26px; }

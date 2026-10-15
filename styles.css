@@ -537,6 +537,13 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.8;
 }
 .article-body p { margin-bottom: 24px; }
+.article-body h2 {
+  font-family: var(--font-head);
+  font-size: 26px;
+  margin: 40px 0 16px;
+}
+.article-body a { color: var(--crimson); font-weight: 600; }
+.article-body a:hover { text-decoration: underline; }
 .pullquote {
   font-family: var(--font-head);
   font-size: 26px;

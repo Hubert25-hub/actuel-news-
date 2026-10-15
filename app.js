@@ -112,6 +112,21 @@
     });
   })();
 
+  /* ---------- Bandeau publicitaire ---------- */
+  (function ads() {
+    var track = document.getElementById("ads-track");
+    if (!track || typeof ADS === "undefined" || !ADS.length) return;
+    var html = ADS.map(function (ad) {
+      return '<div class="ad-card">' +
+        '<div class="ad-name">' + esc(ad.name) + '</div>' +
+        '<div class="ad-text">' + esc(ad.text) + '</div>' +
+        '<a class="ad-cta" href="' + esc(ad.link || "#") + '">' +
+          esc(ad.cta || "En savoir plus") + ' &rarr;</a>' +
+      '</div>';
+    }).join("");
+    track.innerHTML = html + html; /* doublé pour la boucle infinie */
+  })();
+
   /* ---------- Blocs de rendu ---------- */
 
   function thumbHTML(a, cls) {

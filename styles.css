@@ -281,6 +281,45 @@ a { color: inherit; text-decoration: none; }
 }
 .ad-card .ad-cta:hover { text-decoration: underline; }
 
+/* ---------- Piliers éditoriaux ---------- */
+.pillars { padding: 56px 0; background: var(--white); }
+.pillars-intro {
+  color: var(--grey);
+  font-size: 17px;
+  margin: 4px 0 28px;
+  max-width: 640px;
+}
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pillar-card {
+  background: var(--paper);
+  border: 1px solid var(--grey-light);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: block;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
+}
+.pillar-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--crimson);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.pillar-card h3 {
+  font-family: var(--font-head);
+  font-size: 24px;
+  margin: 10px 0 8px;
+}
+.pillar-card p { color: var(--grey); font-size: 15px; line-height: 1.6; }
+
 /* ---------- Hero ---------- */
 .hero { padding: 32px 0; }
 .hero-grid {
@@ -613,6 +652,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .ads-track { animation: none; }
   .card { transition: none; }
   .soc { transition: none; }
+  .pillar-card { transition: none; }
 }
 
 /* ---------- Responsive ---------- */
@@ -630,6 +670,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 @media (max-width: 640px) {
   .cards { grid-template-columns: 1fr; }
+  .pillars-grid { grid-template-columns: 1fr; }
   .hero-side { grid-template-columns: 1fr; }
   .hero-main { min-height: 320px; }
   .hero-main h1 { font-size: 26px; }

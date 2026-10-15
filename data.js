@@ -458,8 +458,8 @@ ARTICLES.push(
     excerpt: "Pièces à fournir, étapes et délais : tout ce qu'il faut savoir avant de demander ou renouveler son passeport.",
     image: "",
     author: "La Rédaction",
-    date: "13 octobre 2026",
-    readTime: "4 min de lecture",
+    date: "2026-10-13",
+    readTime: 4,
     tags: ["Droit", "Démarches", "Passeport"],
     body: [
       "Faire une demande de passeport peut sembler compliqué quand on ne connaît pas la procédure. Voici les grandes étapes à connaître pour préparer son dossier sereinement.",
@@ -475,8 +475,8 @@ ARTICLES.push(
     excerpt: "Première demande ou renouvellement : les étapes pour obtenir sa carte nationale d'identité sans stress.",
     image: "",
     author: "La Rédaction",
-    date: "12 octobre 2026",
-    readTime: "3 min de lecture",
+    date: "2026-10-12",
+    readTime: 3,
     tags: ["Droit", "Démarches", "Identité"],
     body: [
       "La carte nationale d'identité est le document de base de la vie administrative. Voici comment s'y prendre pour une première demande comme pour un renouvellement.",
@@ -492,8 +492,8 @@ ARTICLES.push(
     excerpt: "Du choix du statut aux formalités d'immatriculation : le parcours type pour lancer son activité en règle.",
     image: "",
     author: "La Rédaction",
-    date: "11 octobre 2026",
-    readTime: "5 min de lecture",
+    date: "2026-10-11",
+    readTime: 5,
     tags: ["Droit", "Entrepreneuriat", "Démarches"],
     body: [
       "Lancer son entreprise est un projet enthousiasmant, à condition de partir sur de bonnes bases juridiques. Voici les étapes généralement suivies par les créateurs d'entreprise.",
@@ -509,8 +509,8 @@ ARTICLES.push(
     excerpt: "Né au Togo de parents sans nationalité : les pistes à explorer pour faire reconnaître la sienne.",
     image: "",
     author: "La Rédaction",
-    date: "14 octobre 2026",
-    readTime: "5 min de lecture",
+    date: "2026-10-14",
+    readTime: 5,
     tags: ["Droit", "Nationalité", "Démarches"],
     body: [
       "La nationalité se transmet le plus souvent par la filiation : l'enfant d'un parent togolais est généralement togolais. Mais que se passe-t-il quand les parents eux-mêmes n'ont pas de nationalité établie ? La situation est plus complexe, sans être sans issue.",

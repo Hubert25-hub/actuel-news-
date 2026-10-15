@@ -295,3 +295,34 @@
   })();
 
 })();
+
+/* ---------- Météo locale du visiteur (géolocalisation IP, repli : Lomé) ---------- */
+(function () {
+  var el = document.getElementById("local-weather");
+  if (!el) return;
+  function show(city, temp) {
+    el.textContent = city + ", " + Math.round(temp) + "°C";
+  }
+  function getTemp(lat, lon, city) {
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + lon + "&current=temperature_2")
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && d.current && typeof d.current.temperature_2 === "number") show(city, d.current.temperature_2);
+      })
+      .catch(function () {});
+  }
+  fetch("https://ip-api.com/json/?fields=status,city,lat,lon")
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (d && d.status === "success" && d.city) { getTemp(d.lat, d.lon, d.city); }
+      else { throw new Error("geo"); }
+    })
+    .catch(function () {
+      fetch("https://ipapi.co/json/")
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (d && d.city && d.latitude) getTemp(d.latitude, d.longitude, d.city);
+        })
+        .catch(function () {});
+    });
+})();

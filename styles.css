@@ -556,13 +556,15 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 32px;
 }
 .byline .author { color: var(--ink); font-weight: 700; }
-.share-row { display: flex; gap: 8px; margin-left: auto; }
+.share-row { display: flex; gap: 8px; margin-left: auto; align-items: center; flex-wrap: wrap; }
+.share-row span { font-weight: 600; margin-right: 4px; }
 .share-row a {
-  width: 36px; height: 36px;
   display: inline-flex; align-items: center; justify-content: center;
+  padding: 8px 16px;
   border: 1px solid var(--grey-light);
-  border-radius: 50%;
-  font-size: 14px;
+  border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+  white-space: nowrap;
 }
 .share-row a:hover { background: var(--ink); color: var(--white); border-color: var(--ink); }
 

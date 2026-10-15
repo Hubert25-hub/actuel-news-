@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hubert25-hub.github.io/actuel-news-/sitemap.xml

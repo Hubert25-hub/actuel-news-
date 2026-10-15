@@ -463,6 +463,7 @@ a { color: inherit; text-decoration: none; }
 .footer-social { margin-top: 14px; font-size: 14px; }
 .footer-social span { opacity: .7; margin-right: 10px; }
 .footer-social a { font-weight: 700; }
+.footer-social a + a { margin-left: 14px; }
 .footer-bottom {
   border-top: 1px solid #26262b;
   padding-top: 20px;

@@ -170,12 +170,13 @@
     var mount = $("#category-sections");
     if (!mount) return;
 
-    // Ticker : les 4 derniers titres
+    // Ticker : les 4 derniers titres (doublés pour le défilement infini)
     var ticker = $("#ticker-items");
     if (ticker) {
-      ticker.innerHTML = latest(4).map(function (a) {
+      var tickItems = latest(4).map(function (a) {
         return "<span>" + esc(a.title) + "</span>";
       }).join("");
+      ticker.innerHTML = tickItems + tickItems;
     }
 
     // Le hero codé en dur montre déjà les ids 1 à 5 : on les exclut des sections

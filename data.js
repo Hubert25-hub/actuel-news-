@@ -455,14 +455,16 @@ const ARTICLES = [
    de la page d'accueil. Pour ajouter un annonceur, copiez un
    bloc { ... } et remplissez les champs.
    Champs : name (nom), text (accroche), cta (bouton),
-   link (lien, "#" = pas de lien).
+   link (lien, "#" = pas de lien, la carte n'est pas cliquable),
+   image (URL d'image optionnelle), theme ("dark" = carte sombre).
    ============================================================ */
 const ADS = [
   {
-    name: "Votre entreprise ici",
-    text: "Faites défiler votre activité devant des milliers de lecteurs.",
-    cta: "Devenir annonceur",
-    link: "#"
+    name: "Hubcreate",
+    text: "Des sites web qui impressionnent. Conçus avec soin.",
+    cta: "Visiter hubcreate.dev",
+    link: "https://hubcreate.dev",
+    theme: "dark"
   },
   {
     name: "Espace pub disponible",

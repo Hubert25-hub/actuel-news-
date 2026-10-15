@@ -531,7 +531,7 @@ const ADS = [
   },
   {
     name: "AYEGROUPE",
-    text: "Ingénierie logicielle, négoce et logistique internationale. Lomé et Surrey.",
+    text: "Logiciel, création, négoce, logistique et équipement IT. 38 domaines d'intervention.",
     cta: "Découvrir le groupe",
     link: "https://ayegroupe.com/fr/"
   },

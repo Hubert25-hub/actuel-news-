@@ -501,6 +501,23 @@ ARTICLES.push(
       "Viennent ensuite les formalités d'immatriculation auprès des organismes compétents, puis l'obtention des documents officiels d'existence légale de l'entreprise.",
       "Enfin, pensez aux obligations qui suivent la création : comptabilité, déclarations et éventuelles autorisations sectorielles. Se faire accompagner par un professionnel du droit reste le meilleur investissement de départ."
     ]
+  },
+  {
+    id: 27,
+    title: "Nationalité togolaise : que faire quand ses parents n'ont pas la nationalité ?",
+    category: "droit",
+    excerpt: "Né au Togo de parents sans nationalité : les pistes à explorer pour faire reconnaître la sienne.",
+    image: "",
+    author: "La Rédaction",
+    date: "14 octobre 2026",
+    readTime: "5 min de lecture",
+    tags: ["Droit", "Nationalité", "Démarches"],
+    body: [
+      "La nationalité se transmet le plus souvent par la filiation : l'enfant d'un parent togolais est généralement togolais. Mais que se passe-t-il quand les parents eux-mêmes n'ont pas de nationalité établie ? La situation est plus complexe, sans être sans issue.",
+      "Selon les cas, plusieurs pistes peuvent être explorées : la naissance sur le sol togolais, la résidence durable dans le pays, ou encore les procédures d'acquisition prévues pour les situations particulières. Chaque parcours dépend de l'histoire familiale et des documents disponibles.",
+      "La première étape consiste à reconstituer ce qui peut l'être : actes de naissance, témoignages, preuves de résidence ou de scolarisation. Les services de l'état civil et, si nécessaire, les juridictions compétentes examinent ensuite le dossier.",
+      "Attention : chaque situation est unique et le droit de la nationalité comporte des subtilités. Cet article est un guide général et ne remplace pas l'avis d'un juriste. Avant toute démarche, faites-vous accompagner par un professionnel du droit qui étudiera votre cas précis."
+    ]
   }
 );
 
